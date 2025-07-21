@@ -1,5 +1,7 @@
 # RocketPill
- 
+This is to build a rocket vehicle and launching platform, as well as its digital twin or simulation for detailied testing before build and launch. Details of the rocket design in OpenMotor and OpenRocket and any model rocket launch updates to be shared here soon!
+
+# Data Driven simulation
 This is a data and ML driven simulator for rockets, from launch through flight. The outline is to include the following main components:
 1. A time series LLM (based on the Informer Model) to predict thrust curve for generating launch and flight
 2. Pressure curve time series model to generate the chamber and wall pressure in combo
