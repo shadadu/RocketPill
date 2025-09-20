@@ -1,12 +1,10 @@
 # RocketPill
 
-This is a data and ML driven simulator for rockets to aid in general and failure testing before launch. The outline is to include the following main components:
-1. A time series LLM (based on the Informer Model) to predict thrust curve for generating launch and flight
-2. Pressure curve time series model to generate the chamber and wall pressure in combo
-3. Thermoacoustic instability model to predict possible pressure, heat, and acoustic instabilities
-4. Structural Integrity/Fault Tolerance model: Deduce or predict how the rocket's structure or walls respond or tolerate the Pressure curve and Thermoacoustic instablities. Currently, we are looking at a Finite Element (FE) Sectional-Tolerance model of the Rocket vehicle. This in a way means scanning the 3D rocket vehicle and combining or splitting components into finite element sections. Each FE section's tolerances (min/max tolerances) in terms of the factors that matter (pressure, heat, acoustic vibrations, etc) are then assigned. This FE tolerance model can then be used to simulate structural integrity during launch and flight. For example: Optimizing structural integrity of a pressure vessel via finite element analysis and machine learning based XGBoost approaches: https://www.nature.com/articles/s41598-025-96472-y
-5. An environmental model to simulate the wind and drag acting on the rocket, such as a pretrained weather DL model to simulate the wind and pressures at the launch site
-6. A visual or animation component using Unity/C#. Plug the model components into a Unity rocket simulation framework to enable visualizing the rocket launch and flight simulation. 
+Simulation of rocket engines using off-the-shelf simulators and complexity science to support instability analysis and failure prediction in rocket engines and vehicles.
+
+1. A time series LLM (based on the Informer Model) to predict thrust curve for generating launch and flight using thrust curve data
+3. Pressure curve time series model to generate the chamber and wall pressure
+4. A time series and complexity science based model to predict on-set of Thermoacoustic instability: on-set of instabilities are known to be associated with transition from steady states to periodic states. Juniper & Sujith: Sensitivity and Nonlinearity of Thermoacoustic Oscillations  
 
 Datasets and models are pushed to Hugging Face hub: https://huggingface.co/shaddie
 

@@ -22,6 +22,7 @@ var/
 wheels/
 share/python-wheels/
 *.egg-info/
+.idea/
 .installed.cfg
 *.egg
 MANIFEST
@@ -165,3 +166,5 @@ Assets/.idea/inspectionProfiles/Project_Default.xml
 Assets/.idea/projectSettingsUpdater.xml
 Assets/.idea/vcs.xml
 Assets/.idea/workspace.xml
+*.json
+*.idea/
