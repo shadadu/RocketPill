@@ -3,8 +3,9 @@
 Simulation of rocket engines using off-the-shelf simulators and complexity science to support instability analysis and failure prediction in rocket engines and vehicles.
 
 1. A time series LLM (based on the Informer Model) to predict thrust curve for generating launch and flight using thrust curve data
-3. Pressure curve time series model to generate the chamber and wall pressure
-4. A time series and complexity science based model to predict on-set of Thermoacoustic instability: on-set of instabilities are known to be associated with transition from steady states to periodic states. Juniper & Sujith: Sensitivity and Nonlinearity of Thermoacoustic Oscillations  
+2. Pressure curve time series model to generate the chamber
+3. Foamlib/OpenFoam simulation to solve for the wall pressure given the bulk chamber pressure curve
+3. A time series and complexity science based model to predict on-set of Thermoacoustic instability: on-set of instabilities are known to be associated with transition from steady states to periodic states. Juniper & Sujith: Sensitivity and Nonlinearity of Thermoacoustic Oscillations  
 
 Datasets and models are pushed to Hugging Face hub: https://huggingface.co/shaddie
 
