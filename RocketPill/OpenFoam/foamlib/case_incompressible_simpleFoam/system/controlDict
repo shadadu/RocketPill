@@ -1,0 +1,29 @@
+application     simpleFoam;
+startFrom       startTime;
+startTime       0;
+stopAt          endTime;
+endTime         1;
+deltaT          0.001;
+writeControl    timeStep;
+writeInterval   100;
+purgeWrite      0;
+writeFormat     ascii;
+writePrecision  6;
+runTimeModifiable yes;
+
+// Function objects block is below
+functions
+{
+    fieldAveragePressure
+    {
+        type            fieldAverage;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   timeStep;
+        outputInterval  1;
+        fields
+        (
+            p
+        );
+    }
+}

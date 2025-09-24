@@ -1,0 +1,9 @@
+divSchemes
+{
+    default         none;
+    div(phi,U)      bounded Gauss upwind;
+}
+gradSchemes
+{
+    default         Gauss linear;
+}
