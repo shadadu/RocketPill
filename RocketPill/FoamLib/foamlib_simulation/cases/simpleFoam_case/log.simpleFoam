@@ -1,0 +1,9 @@
+Using: OpenFOAM-v2506 (2506) - visit www.openfoam.com
+Build: _615aae61d7-20250627
+
+Expected 0 arguments but found 1
+Invalid option: -stopAt
+
+See 'simpleFoam -help' for usage
+ or 'simpleFoam -help-full' for extended usage
+
