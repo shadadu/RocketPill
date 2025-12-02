@@ -1,6 +1,18 @@
 # RocketPill
 
-Simulation of rocket engines using off-the-shelf simulators and complexity science to support instability analysis and failure prediction in rocket engines and vehicles.
+
+### About this Project (& Literature Review)
+This project builds a digital twin or high fidelity simulation of a rocket vehicle to support combustion instability analysis and vehicle failure prediction and mitigation. 
+
+The strategy is a CFD simulation based on the Navier-Stokes Equations and its proven CFD solutions in the literature. The Navier Stokes equations are famously unsolved for all continuous cases (see the Millenium Price). A good series of lectures on CFD, the Navier Stokes equations, and prediction of turbulent scenarios is by Prof S.A.E. Miller: https://www.youtube.com/watch?v=01X5ECv3qIU&list=PLbiOzt50Bx-kV3Lcn5piPyV9EvpmOybJR
+
+Current methods to predict on-set of turbulence or chaos include empirical-numerical methods or methods that can be classified as data science. Empirical numerical methods trigger instabilities with special parameters or factors or specify regions or initial conditions with such triggering behaviors. Data methods collect data with on-set of instabilities and attempt to use time series and other methods to model and then predict the transitions to instability or turbulence or chaos.
+ 
+The chaotic or turbulent regime, and thermoacoustic instability analysis are important approaches that researchers use to study and predict combustion instabilities. This project will start exploring the chaotic or turbulent approach, and then, add the TAI approach per resource and time constraints. 
+
+The aim of this project then is a combustion simulation coupled with a minimal high fidelity vehicle structure simulation to predict how pressure and other combustion-related effects may cause structural integrity issues.
+
+# Data Simulation
 
 1. A time series LLM (based on the Informer Model) to predict thrust curve for generating launch and flight using thrust curve data
 2. Pressure curve time series model to generate the chamber
