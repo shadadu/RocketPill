@@ -18,7 +18,9 @@ The chaotic or turbulent regime, and thermoacoustic instability analysis are imp
 
 The aim of this project then is a combustion simulation coupled with a minimal high fidelity vehicle structure simulation to predict how pressure and other combustion-related effects may cause structural integrity issues. To achieve this, we start our simulation implementation from the point of Wang and Chen "Unified Navier-Stokes Flowfield and Performance Analysis of Liquid Rocket Engines": http://ftp.demec.ufpr.br/CFD/bibliografia/propulsao/wang_chen_1993.pdf. As noted in the paper, previous simulation efforts utilized combined piecewise, or assembled composite solutions in series. These stages generally consist of a (1) Combustion chamber (modeled with chemical equilibrium analysis) (2) Supersonic or core flow region (3) Wall and shear layers (4) Nozzle or plume flowfield, modeled with CFD. 
 
-There are unique challenges in developing CFD for Rocket engines, owing mainly to the extreme conditions of and the tightly coupled physics involved. See Swiderski "Current challenges in computational fluid dynamics with regard to rocket engine thrust chamber simulation". The solution deployed by researchers is a chemical-geometric Navier-Stokes system of equations that looks at the  
+There are unique challenges in developing CFD for Rocket engines, owing mainly to the extreme conditions of and the tightly coupled physics involved. See Swiderski "Current challenges in computational fluid dynamics with regard to rocket engine thrust chamber simulation". The solution deployed by researchers is a chemical-geometric Navier-Stokes system of equations that wholistically models the chemical kinetics, combustion dynamics, and mesh or geometry(including grid movement due to changes in the nozzle shape from heat and pressure).
+
+We can develop this simulation using FoamLib which allows us to interface with the open source CFD software OpenFOAM: https://github.com/shadadu/RocketPill/blob/main/numerical_solver/srm_cfd_foamlib.ipynb
 
 # CFD References
 1. Lecture Notes by S. A. E. Miller: https://www.youtube.com/watch?v=01X5ECv3qIU&list=PLbiOzt50Bx-kV3Lcn5piPyV9EvpmOybJR
